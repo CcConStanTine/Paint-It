@@ -8,17 +8,17 @@ In this game, your task is to move a Painter, which is painting the fields he go
 
 ### Screen-shots
 
-![alt text](https://github.com/CcConStanTine/Paint-It/blob/master/src/main/resources/img/menu.png)
+<div><img src="https://github.com/CcConStanTine/Paint-It/blob/master/src/main/resources/img/menu.PNG" width="450" height="400"></div>
 
-![alt text](https://github.com/CcConStanTine/Paint-It/blob/master/src/main/resources/img/desc.png)
+<div><img src="https://github.com/CcConStanTine/Paint-It/blob/master/src/main/resources/img/desc.PNG" width="450" height="400"></div>
 
-![alt text](https://github.com/CcConStanTine/Paint-It/blob/master/src/main/resources/img/game1.png)
+<div><img src="https://github.com/CcConStanTine/Paint-It/blob/master/src/main/resources/img/game1.PNG" width="450" height="400"></div>
 
-![alt text](https://github.com/CcConStanTine/Paint-It/blob/master/src/main/resources/img/game2.png)
+<div><img src="https://github.com/CcConStanTine/Paint-It/blob/master/src/main/resources/img/game2.PNG" width="450" height="400"></div>
 
-![alt text](https://github.com/CcConStanTine/Paint-It/blob/master/src/main/resources/img/game3.png)
+<div><img src="https://github.com/CcConStanTine/Paint-It/blob/master/src/main/resources/img/game3.PNG" width="450" height="400"></div>
 
-![alt text](https://github.com/CcConStanTine/Paint-It/blob/master/src/main/resources/img/summarry.png)
+<div><img src="https://github.com/CcConStanTine/Paint-It/blob/master/src/main/resources/img/summary.PNG" width="450" height="400"></div>
 
 ### Class diagram
 
