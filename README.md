@@ -4,7 +4,7 @@ Simple desktop game in Java, which I invented and created during second year of 
 
 ### Description
 
-In this game, your task is to move a Painter, which is painting the fields he goes through. Of course, there are many ways you can do it, and the main purpose of the game is to find the least possible amount of moves. 
+In this game, your task is to move a Painter, which is painting the fields he goes through. Of course, there are many ways you can do it, and the main purpose of the game is to find the way with the least possible amount of moves. 
 
 ### Screen-shots
 <div style="display: table-row">
