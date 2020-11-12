@@ -1,7 +1,7 @@
 import java.util.HashMap;
 import java.util.Map;
 
-public class Score implements Comparable<Score>{
+public class Score{
 
     private Map<Integer, Integer> mapsScores;
 
@@ -22,15 +22,5 @@ public class Score implements Comparable<Score>{
         for(Integer i : mapsScores.values())
             sum+=i;
         return sum;
-    }
-
-    public int compareTo(Score o) {
-        int sum1 = this.getSum(), sum2 = o.getSum();
-        if(sum1 == sum2)
-            return 0;
-        else if (sum1 > sum2)
-            return 1;
-        else
-            return -1;
     }
 }
