@@ -1,3 +1,5 @@
+import java.awt.*;
+
 public class Board {
 
     private Tile[][] tile2DArray;
@@ -27,6 +29,7 @@ public class Board {
                 tile2DArray[i][j].setBounds(100 + j*26, a, 25, 25);
             }
         }
+
     }
 
 }

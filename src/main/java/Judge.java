@@ -9,20 +9,10 @@ public class Judge {
                     }
                 }
             }
-        if(BoardManager.Maps.mapsSettings.get(mapNumber-1).getAmountOfPaintableFieldsOnMap1() == amountOfPaintedFields)
+        if(BoardManager.Maps.mapsSettings.get(mapNumber-1).getAmountOfPaintableFields() == amountOfPaintedFields)
             return true;
         else
             return false;
-    }
-
-    public boolean isScoreOneOfTheBest(Score score, BestScores bestScores) {
-        for(Score score1 : bestScores.getBestScores()) {
-            if(score.getSum() > score1.getSum())
-                return true;
-            else
-                return false;
-        }
-        return true;
     }
 
 }

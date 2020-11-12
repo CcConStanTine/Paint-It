@@ -1,11 +1,12 @@
+import java.util.HashMap;
 import java.util.Map;
 
 public class Score implements Comparable<Score>{
 
     private Map<Integer, Integer> mapsScores;
 
-    public Score(Map<Integer, Integer> mapsScores) {
-        this.mapsScores = mapsScores;
+    public Score() {
+        this.mapsScores = new HashMap<>();
     }
 
     public Map<Integer, Integer> getMapsScores() {

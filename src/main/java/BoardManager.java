@@ -1,7 +1,29 @@
+import java.awt.*;
 import java.util.Arrays;
 import java.util.List;
 
 public class BoardManager {
+
+    public void displayActualStateOfBoard(Painter painter, Tile[][] tile2DArray) {
+        for(int i=0; i<tile2DArray.length; i++) {
+            for(int j=0; j<tile2DArray[i].length; j++) {
+                if((i==painter.getX() && j==painter.getY())) {
+                    tile2DArray[i][j].setBackground(Color.YELLOW);
+                }
+                else if(!tile2DArray[i][j].isPaintable()) {
+                    tile2DArray[i][j].setBackground(Color.BLACK);
+                }
+                else {
+                    if(tile2DArray[i][j].isPainted()) {
+                        tile2DArray[i][j].setBackground(Color.ORANGE);
+                    }
+                    else {
+                        tile2DArray[i][j].setBackground(Color.WHITE);
+                    }
+                }
+            }
+        }
+    }
 
     public void cleanBoard(Tile[][] tile2DArray) {
         for(int i=0;i<19;i++)
@@ -11,12 +33,49 @@ public class BoardManager {
             }
     }
 
-    public void loadMap(int mapNumber, Tile[][] tile2DArray) {
+    public void loadMap(int mapNumber, Painter painter, Tile[][] tile2DArray,
+                        int amountOfPaintableFields, int leastPossibleMoves) {
         switch (mapNumber) {
-            case 1: Maps.setSettingsOfMap1OnBoard(tile2DArray); break;
-            case 2: Maps.setSettingsOfMap2OnBoard(tile2DArray); break;
-            case 3: Maps.setSettingsOfMap3OnBoard(tile2DArray); break;
-            case 4: Maps.setSettingsOfMap4OnBoard(tile2DArray); break;
+            case 1: {
+                Maps.setSettingsOfMap1OnBoard(tile2DArray);
+                MapSettings mapSettings = Maps.mapsSettings.get(0);
+                Painter painter1 = new Painter();
+                painter1.setStartingPosition(mapSettings.getStartingPainterXPosition(),
+                        mapSettings.getStartingPainterYPosition());
+                painter.setStartingPosition(mapSettings.getStartingPainterXPosition(),
+                        mapSettings.getStartingPainterYPosition());
+                amountOfPaintableFields = mapSettings.getAmountOfPaintableFields();
+                leastPossibleMoves = mapSettings.getLeastPossibleAmountOfMoves();
+                displayActualStateOfBoard(painter1, tile2DArray);
+
+            } break;
+            case 2: {
+                Maps.setSettingsOfMap2OnBoard(tile2DArray);
+                MapSettings mapSettings = Maps.mapsSettings.get(1);
+                painter.setStartingPosition(mapSettings.getStartingPainterXPosition(),
+                        mapSettings.getStartingPainterYPosition());
+                amountOfPaintableFields = mapSettings.getAmountOfPaintableFields();
+                leastPossibleMoves = mapSettings.getLeastPossibleAmountOfMoves();
+                displayActualStateOfBoard(painter, tile2DArray);
+            } break;
+            case 3: {
+                Maps.setSettingsOfMap3OnBoard(tile2DArray);
+                MapSettings mapSettings = Maps.mapsSettings.get(2);
+                painter.setStartingPosition(mapSettings.getStartingPainterXPosition(),
+                        mapSettings.getStartingPainterYPosition());
+                amountOfPaintableFields = mapSettings.getAmountOfPaintableFields();
+                leastPossibleMoves = mapSettings.getLeastPossibleAmountOfMoves();
+                displayActualStateOfBoard(painter, tile2DArray);
+            } break;
+            case 4: {
+                Maps.setSettingsOfMap4OnBoard(tile2DArray);
+                MapSettings mapSettings = Maps.mapsSettings.get(3);
+                painter.setStartingPosition(mapSettings.getStartingPainterXPosition(),
+                        mapSettings.getStartingPainterYPosition());
+                amountOfPaintableFields = mapSettings.getAmountOfPaintableFields();
+                leastPossibleMoves = mapSettings.getLeastPossibleAmountOfMoves();
+                displayActualStateOfBoard(painter, tile2DArray);
+            } break;
             default: break;
         }
     }
@@ -27,7 +86,7 @@ public class BoardManager {
                 new MapSettings(1, 138, 1, 1, 40),
                 new MapSettings(2, 119, 12, 7, 39),
                 new MapSettings(3, 123, 2, 7, 36),
-                new MapSettings(4, 125, 9, 8, 46)
+                new MapSettings(4, 135, 9, 8, 46)
                 );
 
         public static void setSettingsOfMap1OnBoard(Tile[][] tile2DArray) {

@@ -1,14 +1,14 @@
 public class MapSettings {
 
     private final int mapNumber;
-    private final int amountOfPaintableFieldsOnMap1;
+    private final int amountOfPaintableFields;
     private final int startingPainterXPosition;
     private final int startingPainterYPosition;
     private final int leastPossibleAmountOfMoves;
 
-    public MapSettings(int mapNumber, int amountOfPaintableFieldsOnMap1, int startingPainterXPosition, int startingPainterYPosition, int leastPossibleAmountOfMoves) {
+    public MapSettings(int mapNumber, int amountOfPaintableFields, int startingPainterXPosition, int startingPainterYPosition, int leastPossibleAmountOfMoves) {
         this.mapNumber = mapNumber;
-        this.amountOfPaintableFieldsOnMap1 = amountOfPaintableFieldsOnMap1;
+        this.amountOfPaintableFields = amountOfPaintableFields;
         this.startingPainterXPosition = startingPainterXPosition;
         this.startingPainterYPosition = startingPainterYPosition;
         this.leastPossibleAmountOfMoves = leastPossibleAmountOfMoves;
@@ -18,8 +18,8 @@ public class MapSettings {
         return mapNumber;
     }
 
-    public int getAmountOfPaintableFieldsOnMap1() {
-        return amountOfPaintableFieldsOnMap1;
+    public int getAmountOfPaintableFields() {
+        return amountOfPaintableFields;
     }
 
     public int getStartingPainterXPosition() {
