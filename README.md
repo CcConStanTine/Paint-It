@@ -19,6 +19,7 @@ In this game, your task is to move a Painter, which is painting the fields he go
   <div style="display: table-cell;"><img src="https://github.com/CcConStanTine/Paint-It/blob/master/src/main/resources/img/game3.PNG" width="450" height="400"></div>
   <div style="display: table-cell;"><img src="https://github.com/CcConStanTine/Paint-It/blob/master/src/main/resources/img/summary.PNG" width="450" height="400"></div>
 </div>
+
 ### Class diagram
 
 ![alt text](https://github.com/CcConStanTine/Paint-It/blob/master/src/main/resources/img/Paint-It!.png)
