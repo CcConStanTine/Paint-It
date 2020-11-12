@@ -1,6 +1,6 @@
 # Paint-It!🕹️
 
-Simple desktop game in Java, which I invented and created during second year of studies for Object Programming classes. 
+Desktop game in Java, which I invented and created during second year of studies for Object Programming classes. 
 
 ### Description
 
